@@ -16,7 +16,6 @@ const routes: Routes = [
 { path: '', redirectTo: 'first', pathMatch: 'full' },
   { path: '**', redirectTo: 'pages/notfound' },
 
-  
 ];
 
 @NgModule({

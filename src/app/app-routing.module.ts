@@ -1,14 +1,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ViewComponentComponent } from './view-component/view-component.component';
-import { SecondComponentComponent } from './second-component/second-component.component';
-import { ComponentComponent } from './second/component/component.component';
+
+
 
 
 const routes: Routes = [
-  {path: '',component:ViewComponentComponent},
-  {path:'secondcomp',component:SecondComponentComponent},
-  {path: 'comp',component:ComponentComponent}
+  {
+    path: 'second',
+    loadChildren: './second/second.module#SecondModule'
+  },
+{
+  path: 'first',
+  loadChildren: './first/first.module#FirstModule'
+},
+{ path: '', redirectTo: 'first', pathMatch: 'full' },
+  { path: '**', redirectTo: 'pages/notfound' },
+
+  
 ];
 
 @NgModule({

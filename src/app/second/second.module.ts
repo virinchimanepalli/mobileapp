@@ -2,14 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SecondRoutingModule } from './second-routing.module';
-import { ComponentComponent } from './component/component.component';
+import { DefaultComponent } from './default/default.component';
+
 
 
 
 @NgModule({
-  declarations: [ComponentComponent],
+  declarations: [DefaultComponent],
   exports:[
-    ComponentComponent
+    
   ],
   imports: [
     CommonModule,

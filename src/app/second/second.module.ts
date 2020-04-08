@@ -6,6 +6,7 @@ import { DefaultComponent } from './default/default.component';
 import { TodoComponent } from './todo/todo.component';
 import { SecondComponent } from './second.component';
 import { VirinchiComponent } from './virinchi/virinchi.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +18,9 @@ import { VirinchiComponent } from './virinchi/virinchi.component';
   ],
   imports: [
     CommonModule,
-    SecondRoutingModule
+    SecondRoutingModule,
+    FormsModule,ReactiveFormsModule
+    
   ]
 })
 export class SecondModule { }
